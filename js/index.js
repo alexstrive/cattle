@@ -16,7 +16,7 @@ function getRandomUrl() {
 }
 
 function makeServiceRequest() {
-    return fetch('http://thecatapi.com/api/images/get');
+    return fetch('https://thecatapi.com/api/images/get');
 }
 
 leftCatBtn.addEventListener('click', () => {
