@@ -28,7 +28,6 @@ rightCatBtn.addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Hello world!');
     changeCatImage(leftCat);
     changeCatImage(rightCat);
 });
