@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+  background-color: #FFEB3B; }
+
+main #title {
+  width: 100%;
+  text-align: center; }
+
+main .cats {
+  background-color: white;
+  max-width: 1024px;
+  margin: 0 auto; }
+  main .cats img {
+    width: 100%; }
+  main .cats button {
+    width: 100%;
+    background-color: #FFC107;
+    border: none;
+    transition: all 0.2s;
+    font-size: 20px; }
+    main .cats button:hover {
+      background-color: #FFB300; }
+    main .cats button:active {
+      background-color: #FF8F00; }
+
+@media (min-width: 600px) {
+  .cats {
+    display: grid;
+    grid-template: 1fr 30px / 1fr 1fr;
+    border: 2px solid black;
+    justify-items: center;
+    align-items: center; } }

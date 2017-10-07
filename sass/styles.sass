@@ -1,0 +1,44 @@
+$width-medium-device: 600px
+$color-bg: #FFEB3B
+$color-button: #FFC107
+$color-button-hover: #FFB300
+$color-button-active: #FF8F00
+
+body
+  font-family: Arial
+  background-color: $color-bg
+
+main
+
+  #title
+    width: 100%
+    text-align: center
+
+  .cats
+    background-color: white
+    max-width: 1024px
+    margin: 0 auto
+
+    img
+      width: 100%
+
+    button
+      width: 100%
+      background-color: $color-button
+      border: none
+      transition: all 0.2s
+      font-size: 20px
+
+      &:hover
+        background-color: $color-button-hover
+
+      &:active
+        background-color: $color-button-active
+
+@media (min-width: $width-medium-device)
+  .cats
+    display: grid
+    grid-template: 1fr 30px / 1fr 1fr
+    border: 2px solid black
+    justify-items: center
+    align-items: center
