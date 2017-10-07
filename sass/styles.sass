@@ -39,6 +39,16 @@ main
   .cats
     display: grid
     grid-template: 1fr 30px / 1fr 1fr
+    grid-template-areas: "top-left top-right" "bottom-left bottom-right"
     border: 2px solid black
     justify-items: center
     align-items: center
+
+    #left-cat
+      grid-area: top-left
+    #right-cat
+      grid-area: top-right
+    #left-cat-btn
+      grid-area: bottom-left
+    #right-cat-btn
+      grid-area: bottom-right
